@@ -28,3 +28,5 @@ jobs:
         with:
           name: app
           path: ${{ github.workspace }}/demo
+
+  
