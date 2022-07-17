@@ -1,0 +1,15 @@
+name: .Net Build Standard
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: github-mao-na-massa/pipeline-templates/.github/workflows/dotnet.yml@main
+       
