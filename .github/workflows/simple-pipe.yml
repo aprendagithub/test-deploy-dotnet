@@ -101,8 +101,8 @@ jobs:
       - name: get output
         id: tfoutput
         run: |
-         $(terraform output app_service_name | tr -d '"' )
-          rgname= output=$(terraform output rg_name | tr -d '"' )
+          output=$(terraform output app_service_name | tr -d '"' )
+          rgname=$(terraform output rg_name | tr -d '"' )
           echo $output
           echo "::set-output name=appservicename::$output"
           echo "::set-output name=rgname::$rgname"
